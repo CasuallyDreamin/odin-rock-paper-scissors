@@ -1,0 +1,18 @@
+body {
+    background-color: skyblue;
+    color: #808080;
+    justify-items: center;
+}
+.choices {
+    flex-direction: row;
+    display: flex;
+    justify-content: space-evenly;
+    justify-items: center;
+}
+button {
+    background-color: black;
+    color: aliceblue;
+    border-radius: 10px;
+    width: 30%;
+    height: 80px;
+}

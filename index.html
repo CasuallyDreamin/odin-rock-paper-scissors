@@ -3,35 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>RPS</title>
+    <script src="rps.js" defer></script>
+    <link rel="stylesheet" href="rps-style.css">
 </head>
 <body>
-    <button id= 'choice' type="submit">Choice</button>
+    <div class="choices">
+        <button id= 'rock' type="submit">rock</button>
+        <button id= 'paper' type="submit">paper</button>
+        <button id= 'scissor' type="submit">scissor</button>
+    </div>
+    score:
+    <div id="scoreBoard" style="background-color: black;color: aliceblue;">0</div>
+    <div id="cpc"></div>
 </body>
-<script>
-    function getComputerChoice() {
-        const choice_index = parseInt(Math.random()*10 % 3)
-        choices = ['Rock', 'Paper', 'Scissor']
-        
-        return choices[choice_index]
-    }
-    
-    function getHumanChoice() {
-        const human_choice = prompt("Enter your choice between Rock, Paper, Scissor")
-        return human_choice
-    }
-    function playRound(human, computer) {
-        if (human === computer) return 1
-        else return 0
-    }
-    let score = 0;
-    
-    const computer = getComputerChoice();
-    const human = getHumanChoice();
-    score += playRound(human, computer)
-
-    console.log(score)
-
-    
-</script>
 </html>
